@@ -101,6 +101,22 @@ quotesArray.forEach(function(quote, index){
 });
 
 
+let jediPlayer = [22, 24, 980, 200];
+let stormPlayer = [11, 14, 900, 100];
+
+function changeScores(item, index, whichArrary){
+	whichArrary[index] = item * 10;
+}
+
+document.getElementById("changeJedi").addEventListener("click", () => {
+	jediPlayer.forEach(changeScores);
+	console.log("Jedi", jediPlayer);
+});
+
+document.getElementById("changeStorm").addEventListener("click", () => {
+	stormPlayer.forEach(changeScores);
+	console.log("Storm Trooper", stormPlayer);
+});
 
 
 
